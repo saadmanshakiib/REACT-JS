@@ -5,15 +5,38 @@ import Footer from './component/Footer';
 import Hero from './component/Hero';
 
 
+const loginButton=(status)=>{
+  if(status){
+    return <button>Logout</button>
+  }
+  else{
+    return <button>Login</button>
+  }
+}
+
 
 const App = () => {
+
+  const status = false;
+
+  switch(status){
+    case true: return <button>Logout</button>
+    case false: return <button>Login</button>
+    default: return null;
+  }
 
  let marks = 87;
          const city = ["Dhaka","Chittagong","London","Dublin"];
         const letter = ["e","q","a","f"];
 
 
-  return (
+  return(
+        // <div>
+        //   <h1>Login status</h1>
+        //   {loginButton(false)}
+        // </div>
+
+      );
     <div>
       <Demo/>
       <ContactForm/>
@@ -71,10 +94,8 @@ const App = () => {
         </ol>
     </div>
    
-  );
 
 
 
 }
 export default App;
-
