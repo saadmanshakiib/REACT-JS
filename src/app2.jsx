@@ -17,6 +17,12 @@ import Hero from './component/Hero';
 
 const App = () => {
 
+  // return(
+  //     <div>
+  //       <Hero title="Learning with Sadman" des="Parent Function App.jsx is sending data to the child function hero.jsx"/>
+  //     </div>
+  // );
+
   // const status = false; //automatically invoked function
   // return(
   //   <div>
