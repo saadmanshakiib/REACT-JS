@@ -17,6 +17,25 @@ import Hero from './component/Hero';
 
 const App = () => {
 
+  const buttonClick=()=>{
+    alert("Error")
+  }
+  return(
+    <div>
+      <Hero btnclk = {buttonClick}/>
+    </div>
+  )
+  // const itemObj = {
+  //   name : "Sadman",
+  //   age : 23,
+  //   city : "Dhaka"
+  // }
+  // return(
+  //   <div>
+  //     <Hero item = {itemObj}/> 
+  //   </div>
+  // );
+
   // return(
   //     <div>
   //       <Hero title="Learning with Sadman" des="Parent Function App.jsx is sending data to the child function hero.jsx"/>
