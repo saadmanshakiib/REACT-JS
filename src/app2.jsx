@@ -17,13 +17,16 @@ import Hero from './component/Hero';
 
 const App = () => {
 
-  const buttonClick=()=>{
-    alert("Error")
-  }
+  // const buttonClick=()=>{
+  //   alert("Error")
+  // }
   return(
-    <div>
-      <Hero btnclk = {buttonClick}/>
-    </div>
+    // <div>
+    //   <Hero btnclk = {buttonClick}/>
+    // </div>
+    <button onClick={()=>{
+      alert("Error!!!")
+    }}>Click For Error</button>
   )
   // const itemObj = {
   //   name : "Sadman",
