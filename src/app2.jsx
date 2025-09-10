@@ -3,6 +3,7 @@ import ContactForm from './component/ConatctForm';
 import Header from './component/Header';
 import Footer from './component/Footer';
 import Hero from './component/Hero';
+import { useRef } from "react";
 
 
 // const loginButton=(status)=>{
@@ -17,17 +18,43 @@ import Hero from './component/Hero';
 
 const App = () => {
 
-  // const buttonClick=()=>{
-  //   alert("Error")
+  // const postFormData = (event) =>{
+  //   event.preventDefault();
+  //   alert("Submitted");
   // }
+
+    let myRef = useRef();
+
+
+    const change=()=>{
+    myRef.current.innerHTML = "<ul><li>Sadman</li><li>Sakib</li></ul>";
+    }
+
+
   return(
-    // <div>
-    //   <Hero btnclk = {buttonClick}/>
-    // </div>
-    <button onClick={()=>{
-      alert("Error!!!")
-    }}>Click For Error</button>
-  )
+     <div>
+      <h1 ref={myRef}></h1>
+      <button onClick={change}>Click</button>
+  </div>
+  //   <div>
+  //     <form onSubmit={postFormData}>
+  //       <input placeholder="Name"></input>
+  //     <button type="submit">Submit</button>
+  //     </form>
+  //   </div>
+   )
+
+  // // const buttonClick=()=>{
+  // //   alert("Error")
+  // // }
+  // return(
+  //   // <div>
+  //   //   <Hero btnclk = {buttonClick}/>
+  //   // </div>
+  //   <button onClick={()=>{
+  //     alert("Error!!!")
+  //   }}>Click For Error</button>
+  // )
   // const itemObj = {
   //   name : "Sadman",
   //   age : 23,
