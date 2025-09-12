@@ -3,7 +3,7 @@ import ContactForm from './component/ConatctForm';
 import Header from './component/Header';
 import Footer from './component/Footer';
 import Hero from './component/Hero';
-import { useRef } from "react";
+import { use, useRef } from "react";
 
 
 // const loginButton=(status)=>{
@@ -18,31 +18,74 @@ import { useRef } from "react";
 
 const App = () => {
 
+  let fName,sName = useRef();
+  
+
+  const clicked =()=>{
+    let firstname = fName.value;
+  let secname = sName.value;
+    alert("Hello "+firstname+" "+secname);
+  }
+
+  return(
+    <div>
+      <input ref={(a)=>fName=a}></input>
+      <input ref={(a)=>sName=a}></input>
+      <button onClick={clicked}>Submit</button>
+    </div>
+  )
+  //     let firstNameRef = useRef();
+  //     let lastNameRef = useRef();
+
+  //     const submit=()=>{
+  //       alert("Hello " + firstNameRef.current.value +" "+ lastNameRef.current.value)
+  //     }
+
+  // return(
+  //   <div>
+  //     <input ref={firstNameRef} placeholder="Enter first name"></input>
+  //     <input ref={lastNameRef} placeholder="Enter last name"></input>
+  //     <button onClick={submit}>Submit</button>
+  //   </div>
+  // )
+  // let myImgRef = useRef();
+
+  // const change = () => {
+  //     myImgRef.current.src = "https://wallpapers.com/messi-pictures";
+  // }
+
+  // return(
+  //   <div>
+  //     <img ref={myImgRef} src="https://www.gettyimages.in/photos/ruud-gullit-photos"></img>
+  //   <button onClick={change}>Click to change photo</button>
+  //   </div>
+  // )
+
   // const postFormData = (event) =>{
   //   event.preventDefault();
   //   alert("Submitted");
   // }
 
-    let myRef = useRef();
+  //   let myRef = useRef();
 
 
-    const change=()=>{
-    myRef.current.innerHTML = "<ul><li>Sadman</li><li>Sakib</li></ul>";
-    }
+  //   const change=()=>{
+  //   myRef.current.innerHTML = "<ul><li>Sadman</li><li>Sakib</li></ul>";
+  //   }
 
 
-  return(
-     <div>
-      <h1 ref={myRef}></h1>
-      <button onClick={change}>Click</button>
-  </div>
+  // return(
+  //    <div>
+  //     <h1 ref={myRef}></h1>
+  //     <button onClick={change}>Click</button>
+  // </div>
   //   <div>
   //     <form onSubmit={postFormData}>
   //       <input placeholder="Name"></input>
   //     <button type="submit">Submit</button>
   //     </form>
   //   </div>
-   )
+   //)
 
   // // const buttonClick=()=>{
   // //   alert("Error")
