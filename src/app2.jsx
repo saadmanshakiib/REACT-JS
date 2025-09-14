@@ -17,23 +17,35 @@ import { use, useRef } from "react";
 
 
 const App = () => {
-
-  let fName,sName = useRef();
-  
-
-  const clicked =()=>{
-    let firstname = fName.value;
-  let secname = sName.value;
-    alert("Hello "+firstname+" "+secname);
+  let myref = useRef();
+  const change=()=>{
+    myref.current.classList.remove("text-success");
+    myref.current.classList.add('text-danger');
   }
 
   return(
     <div>
-      <input ref={(a)=>fName=a}></input>
-      <input ref={(a)=>sName=a}></input>
-      <button onClick={clicked}>Submit</button>
+      <h1 className="text-success" ref={myref}>Success</h1>
+    <button onClick={change}>Change</button>
     </div>
   )
+
+  // let fName,sName = useRef();
+  
+
+  // const clicked =()=>{
+  //   let firstname = fName.value;
+  // let secname = sName.value;
+  //   alert("Hello "+firstname+" "+secname);
+  // }
+
+  // return(
+  //   <div>
+  //     <input ref={(a)=>fName=a}></input>
+  //     <input ref={(a)=>sName=a}></input>
+  //     <button onClick={clicked}>Submit</button>
+  //   </div>
+  // )
   //     let firstNameRef = useRef();
   //     let lastNameRef = useRef();
 
