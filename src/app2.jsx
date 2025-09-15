@@ -17,18 +17,49 @@ import { use, useRef } from "react";
 
 
 const App = () => {
-  let myref = useRef();
-  const change=()=>{
-    myref.current.classList.remove("text-success");
-    myref.current.classList.add('text-danger');
-  }
+//   const user = {
+//     name: "saadman",
+//     img: "https://media.licdn.com/dms/image/v2/D5603AQFmcw_PNY7Veg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732471936930?e=1760572800&v=beta&t=gjUBYLcwL1r1wcXfoYe3myEhSMUaK3Arj7CUb6cxhVw",
+//     imgsize: 40,
+//   };
 
-  return(
-    <div>
-      <h1 className="text-success" ref={myref}>Success</h1>
-    <button onClick={change}>Change</button>
-    </div>
-  )
+//   let apiData = useRef(null);
+//   let mytag = useRef();
+
+// const fetchData = async() =>{
+//      const response = await fetch('https://dummyjson.com/products');
+//     apiData.current = await response.json();
+      
+// }
+
+//   const showData=()=>{
+//       mytag.current.innerText = JSON.stringify(apiData);
+//   }
+
+//   return (
+//     <div>
+//       <h1>Hi {user.name}</h1>
+//         <p ref={mytag}></p>
+//       <button onClick={fetchData}>Call API</button>
+//       <button onClick={showData}>Show Data</button>
+      
+//     </div>
+//   );
+};
+
+
+  // let myref = useRef();
+  // const change=()=>{
+  //   myref.current.classList.remove("text-success");
+  //   myref.current.classList.add('text-danger');
+  // }
+
+  // return(
+  //   <div>
+  //     <h1 className="text-success" ref={myref}>Success</h1>
+  //   <button onClick={change}>Change</button>
+  //   </div>
+  // )
 
   // let fName,sName = useRef();
   
@@ -244,8 +275,4 @@ const App = () => {
     //     </ol>
     // </div>
    
-
-
-
-}
 export default App;
