@@ -3,7 +3,7 @@ import ContactForm from './component/ConatctForm';
 import Header from './component/Header';
 import Footer from './component/Footer';
 import Hero from './component/Hero';
-import { use, useRef } from "react";
+import { use, useRef, useState } from "react";
 
 
 // const loginButton=(status)=>{
@@ -17,6 +17,52 @@ import { use, useRef } from "react";
 
 
 const App = () => {
+  return(
+    <div>
+      
+    </div>
+  )
+
+  // const [obj,setObj] = useState({
+  //   fname : "sadman",
+  //   lname : "sakib"
+  // });
+
+  //   const change=()=>{
+  //       setObj({fname : "Nissan" , lname:"Shakib"})
+  //   }
+  //   const Reverse=()=>{
+  //     setObj({fname : "sadman",lname : "sakib"})
+  //   }
+  //   const update=()=>{
+  //     setObj(
+  //       prevObj=>({
+  //         ...prevObj,
+  //         fname : "saadman"
+  //       })
+  //     )
+  //   }
+
+  // return(
+
+  //   <div>
+  //     <h1>{obj.fname}</h1>
+  //           <h1>{obj.lname}</h1>
+  //           <button onClick={update}>Change</button>
+  //                       <button onClick={Reverse}>Reverse</button>
+  //   </div>
+  // )
+
+  // const [count,setCount] = useState(0);
+
+  // return(
+  //   <div>
+  //     <h1>Count : {count}</h1>
+  //     <button onClick={()=>setCount(count+1)}>Increase</button>
+  //     <button onClick={()=>setCount(count-1)}>Decrease</button>
+  //     <button onClick={()=>setCount(0)}>Reset</button>
+  //   </div>
+  // )
 //   const user = {
 //     name: "saadman",
 //     img: "https://media.licdn.com/dms/image/v2/D5603AQFmcw_PNY7Veg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732471936930?e=1760572800&v=beta&t=gjUBYLcwL1r1wcXfoYe3myEhSMUaK3Arj7CUb6cxhVw",
