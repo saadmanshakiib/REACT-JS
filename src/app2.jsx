@@ -17,17 +17,57 @@ import { use, useRef, useState } from "react";
 
 
 const App = () => {
-  return(
-    <div>
-      
-    </div>
-  )
+
+// const [data,setFormData] = useState({
+//     name : "",
+//     email : "",
+//     gender: "Male",
+//     city : ""
+// })
+//
+//      const inputChange = (property , value)=>{
+//                 setFormData(prevObj =>({
+//                             ...prevObj,
+//                         [property]: value
+//                 }))
+//      }
+//
+//      const submit=(e)=>{
+//     e.preventDefault();
+//     console.log(data)
+//      }
+//
+//   return(
+//     <div className="container">
+//         <form>
+//             <input
+//                 placeholder="Name"
+//                 value = {data.name}
+//                 onChange={(e)=>{inputChange("name",e.target.value)}}
+//             />
+//             <input
+//                 placeholder="Email"
+//                 value = {data.email}
+//                 onChange={(e)=>{inputChange("email",e.target.value)}}
+//             />
+//             <input type={"radio"} name={"gender"} checked = {data.gender ==="Male" } value={data.gender}/>Male
+//             <input type={"radio"} name={"gender"} checked = {data.gender === "Female"} />Female
+//
+//             <select name="city" value={data.city} onChange={(e)=>{inputChange("city",e.target.value)}}>
+//                 <option name="">City</option>
+//                 <option name="dhk">Dhaka</option>
+//                 <option name="ctg">Chittagong</option>
+//             </select>
+// <button type={"submit"} onClick={submit}>Submit</button>
+//         </form>
+//
+//     </div>
+//   )
 
   // const [obj,setObj] = useState({
   //   fname : "sadman",
   //   lname : "sakib"
   // });
-
   //   const change=()=>{
   //       setObj({fname : "Nissan" , lname:"Shakib"})
   //   }
