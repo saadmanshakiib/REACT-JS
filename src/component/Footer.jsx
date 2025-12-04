@@ -1,8 +1,12 @@
+import {useContext} from "react";
+import {AppContext} from "../ContextDirectory/AppContext.jsx";
 const Footer =() => {
+const phone = useContext(AppContext);
 
     return (
         <div>
-            <p>All rights reserved </p>
+            <h1>Footer</h1>
+<h3>Phone : {phone}</h3>
         </div>
     );
 
